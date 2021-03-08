@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*font-size: 12px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	max-width: 80%;
+}
+header,
+footer {
+	display: inline-block;
+	width: 100%;
+	padding: 0 15px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e9f5db+0,b5c99a+100 */
+	background: #e9f5db; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  #e9f5db 0%, #b5c99a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #e9f5db 0%,#b5c99a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #e9f5db 0%,#b5c99a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f5db', endColorstr='#b5c99a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+header .logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+header a.title {
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+}
+header a.title h2 {
+	margin: 0;
+}
+header h5 {
+	margin: 0;
+}
+nav {
+	background: #e9f5db;
+	padding: 15px;
+}
+nav {
+	display: flex;
+	flex-wrap: nowrap;
+}
+nav a {
+	flex: 1;
+}
+nav a:first-child {
+	text-align: right;
+}
+nav a {
+	text-align: center;
+}
+nav a:last-child {
+	text-align: left;
+}
