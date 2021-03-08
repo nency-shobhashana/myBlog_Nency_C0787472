@@ -3,16 +3,20 @@
 }
 
 body {
-	/*font-size: 12px;*/
+	margin: 0;
+	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+.container {
 	margin: 0 auto;
 	max-width: 80%;
+	padding: 0 15px;
 }
 header,
 footer {
 	display: inline-block;
 	width: 100%;
-	padding: 0 15px;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e9f5db+0,b5c99a+100 */
 	background: #e9f5db; /* Old browsers */
 	background: -moz-linear-gradient(45deg,  #e9f5db 0%, #b5c99a 100%); /* FF3.6-15 */
@@ -20,6 +24,16 @@ footer {
 	background: linear-gradient(45deg,  #e9f5db 0%,#b5c99a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f5db', endColorstr='#b5c99a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+a {
+	color: #718355;
+	text-decoration: none;
+}
+a:hover {
+	color: #84a98c;
+}
+
+/* header*/
 header .logo {
 	display: inline-block;
 	vertical-align: middle;
@@ -35,9 +49,11 @@ header a.title h2 {
 header h5 {
 	margin: 0;
 }
+
+/* Navigation */
 nav {
 	background: #e9f5db;
-	padding: 15px;
+	padding: 15px 0;
 }
 nav {
 	display: flex;
@@ -55,3 +71,93 @@ nav a {
 nav a:last-child {
 	text-align: left;
 }
+
+/* Main page */
+main {
+	display: table;
+	width: 100%;
+	padding: 30px 0;
+}
+.blog-higlight {
+	display: table-cell;
+	width: 70%;
+	padding: 0 15px;
+}
+.blog-higlight img {
+	float: left;
+	width: 50%;
+	padding-right: 15px;
+}
+.blog-higlight h2 {
+clear: both;
+}
+.viewmore {
+	display: inline-block;
+	width: 100%;
+	/*text-align: center;*/
+	margin-bottom: 25px;
+}
+
+/* button design */
+button {
+	background-color: #718355;
+	border-color: #b5c99a;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+button a {
+	color: #FFF;
+}
+button:hover {
+	background-color: #cfe1b9;
+}
+button:hover a,
+button:hover a:hover {
+	color: #000;
+}
+
+/* Side bar */
+aside {
+	display: table-cell;
+	width: 30%;
+	height: 100vh;
+	padding: 15px;
+	background-color: #d8e2dc;
+	vertical-align: top;
+}
+
+.aside-title {
+	position: relative;
+	margin: 60px 0 25px;
+  text-align: center;
+}
+.aside-title:first-child {
+	margin-top: 0;
+}
+.aside-title:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: 0;
+  margin-bottom: -10px;
+  left: calc(50% - 20px);
+  background: #718355;
+}
+aside > ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+aside > ul > li {
+	padding: 15px 0;
+	border-bottom: 1px solid #e9f5db;
+}
+/*aside ul ul {
+	padding-left: 20px;
+	list-style-type: circle;
+}
+aside ul ul li {
+	padding: 0;
+	border-bottom: none;
+}*/
