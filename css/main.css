@@ -4,6 +4,8 @@
 
 body {
 	margin: 0;
+	/*color: #2f2e2e;*/
+	color: #767070;
 	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5;
@@ -17,20 +19,31 @@ header,
 footer {
 	display: inline-block;
 	width: 100%;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e9f5db+0,b5c99a+100 */
-	background: #e9f5db; /* Old browsers */
-	background: -moz-linear-gradient(45deg,  #e9f5db 0%, #b5c99a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg,  #e9f5db 0%,#b5c99a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg,  #e9f5db 0%,#b5c99a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f5db', endColorstr='#b5c99a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+header {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2e9e2+0,efbe99+100 */
+	background: #f2e9e2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f2e9e2 0%, #efbe99 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f2e9e2 0%,#efbe99 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f2e9e2 0%,#efbe99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e9e2', endColorstr='#efbe99',GradientType=0 ); /* IE6-9 */
+
+}
+footer {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efbe99+0,f2e9e2+100 */
+	background: #efbe99; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efbe99 0%, #f2e9e2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #efbe99 0%,#f2e9e2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #efbe99 0%,#f2e9e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efbe99', endColorstr='#f2e9e2',GradientType=0 ); /* IE6-9 */
 }
 
 a {
-	color: #718355;
+	color: #B0694E;
 	text-decoration: none;
 }
 a:hover {
-	color: #84a98c;
+	color: #c8553d;
 }
 
 /* header*/
@@ -46,6 +59,8 @@ header a.title {
 	display: inline-block;
 	text-decoration: none;
 	vertical-align: middle;
+	color: #767070;
+	font-size: 22px;
 }
 header a.title h2 {
 	margin: 0;
@@ -59,8 +74,8 @@ nav {
 	padding: 15px 0;
 	text-align: center;
 	background: #f4f4f4;
-  border-top: 2px solid #000;
-  border-bottom: 5px solid #000;
+  border-top: 2px solid #B0694E;
+  border-bottom: 5px solid #B0694E;
 }
 nav > ul {
 	list-style-type: none;
@@ -81,6 +96,68 @@ nav > ul > li a:after {
 nav > ul > li:last-child a:after {
 	content: none;
 }
+/* button design */
+button {
+	background-color: #B0694E;
+	border-color: #f2e9e2;
+	padding: 10px 15px;
+	border-radius: 0 12px;
+	font-size: 16px;
+}
+button a {
+	color: #FFF;
+}
+button:hover {
+	background-color: #f2e9e2;
+	border-color: #B0694E
+}
+button:hover a,
+button:hover a:hover {
+	color: #000;
+}
+
+
+
+/* Side bar */
+aside {
+	display: table-cell;
+	width: 25%;
+	height: 100vh;
+	padding: 15px;
+	background-color: #eee2df;
+	vertical-align: top;
+}
+.aside-aboutus {
+	text-align: center;
+}
+.aside-title {
+	position: relative;
+	margin: 60px 0 25px;
+  text-align: center;
+  color: #B0694E;
+}
+.aside-title:first-child {
+	margin-top: 0;
+}
+.aside-title:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: 0;
+  margin-bottom: -4px;
+  left: calc(50% - 20px);
+  background: #efbe99;
+}
+aside > ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+aside > ul > li {
+	padding: 15px 0;
+	border-bottom: 1px solid #efbe99;
+}
+
 
 /* Main page */
 main {
@@ -99,6 +176,7 @@ main {
 	padding-right: 15px;
 }
 .blog-higlight-title {
+	color: #B0694E;
 	clear: both;
 }
 .viewmore {
@@ -108,61 +186,4 @@ main {
 	margin-bottom: 25px;
 }
 
-/* button design */
-button {
-	background-color: #718355;
-	border-color: #b5c99a;
-	padding: 10px 15px;
-	border-radius: 0 12px;
-	font-size: 16px;
-}
-button a {
-	color: #FFF;
-}
-button:hover {
-	background-color: #cfe1b9;
-}
-button:hover a,
-button:hover a:hover {
-	color: #000;
-}
 
-/* Side bar */
-aside {
-	display: table-cell;
-	width: 25%;
-	height: 100vh;
-	padding: 15px;
-	background-color: #f4f4f4;
-	vertical-align: top;
-}
-.aside-aboutus {
-	text-align: center;
-}
-.aside-title {
-	position: relative;
-	margin: 60px 0 25px;
-  text-align: center;
-  color: #718355;
-}
-.aside-title:first-child {
-	margin-top: 0;
-}
-.aside-title:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  bottom: 0;
-  margin-bottom: -4px;
-  left: calc(50% - 20px);
-  background: #718355;
-}
-aside > ul {
-	padding-left: 0;
-	list-style-type: none;
-}
-aside > ul > li {
-	padding: 15px 0;
-	border-bottom: 1px solid #718355;
-}
