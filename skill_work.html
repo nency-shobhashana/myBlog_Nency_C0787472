@@ -15,9 +15,9 @@
 	<!-- logo, name and designation of My profile  -->
 	<header>
 		<div class="container">
-			<a href="index.html" class="logo"><img src="images/n-logo.png"></a>
+			<!-- <a href="index.html" class="logo"><img src="images/n-logo.png"></a> -->
 			<a href="index.html" class="title"><h2>Nency Shobhashana</h2></a>
-			<h5><i>Front-end Developer</i></h5>
+			<h3><i>Web Developer</i></h3>
 		</div>
 	</header>
 
@@ -41,35 +41,88 @@
 
 		<div class="container">
 			<aside>
-				<h2 class="aside-title">Details</h2>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li>
-						<a href="skill_work.html">Know me More</a>
+
+				<div class="aside-holder">
+					<h2 class="aside-title">Details</h2>
+					<div class="aside-content">	
 						<ul>
-							<li>Education</li>
-							<li>Skilld</li>
-							<li>Work Experience</li>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="skill_work.html">Know me More</a>
+								<ul>
+									<li>Education</li>
+									<li>Skills</li>
+									<li>Work Experience</li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blogs</a></li>
 						</ul>
-					</li>
-					<li><a href="blog.html">Blogs</a></li>
-				</ul>
+					</div>
+				</div>
 
-				<!-- <div class="social-bar">
-					<a href="mailto:emailtonency@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-					<a href="https://stackoverflow.com/users/8938953/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-					<a href="https://www.linkedin.com/in/nency-shobhashana" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-					<a href="nencyResume.pdf" target="_blank" download=""><i class="fa fa-download" aria-hidden="true"></i></a>
-          <a href="https://github.com/nency-shobhashana" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-				</div> -->
 
-				<h2 class="aside-title">Blog Post by year</h2>
-				<ul>
-					<li><a href="blog.html">2019</a></li>
-					<li><a href="blog.html">2020</a></li>
-					<li><a href="blog.html">2021</a></li>
-				</ul>
+				<div class="aside-holder">
+					<h2 class="aside-title">Popular Blog</h2>
+					<div class="aside-content">
+							<div class="popular-blog">		
+			    			<div class="image">
+									<a href="blog1.html">
+										<img src="images/responsive.png" width="60" height="60"> 	
+									</a>
+								</div>
+								<div class="title">
+									<h4><a href="blog1.html">Enjoy the winter time in the city</a></h4>
+								</div>
+							</div>
+							<div class="popular-blog">		
+			    			<div class="image">
+									<a href="blog2.html">
+										<img src="images/responsive.png" width="60" height="60"> 	
+									</a>
+								</div>
+								<div class="title">
+									<h4><a href="blog2.html">Enjoy the winter time in the city</a></h4>
+								</div>
+							</div>
+							<div class="popular-blog">		
+			    			<div class="image">
+									<a href="blog3.html">
+										<img src="images/responsive.png" width="60" height="60"> 	
+									</a>
+								</div>
+								<div class="title">
+									<h4><a href="blog3.html">Enjoy the winter time in the city</a></h4>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="aside-holder">
+					<h2 class="aside-title">Personal Information</h2>
+					<div class="aside-content">
+						<ul>
+							<li><b>Name:</b> Nency Shobhashana</li>
+							<li><b>Contact No:</b> +1 (647) 676 0708</li>
+							<li><b>E-mail:</b> emailtonency@gmail.com</li>
+							<li><b>Address:</b> Ontario, Canda</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="aside-holder">
+					<h2 class="aside-title">External Links</h2>
+					<div class="aside-content">
+						<div class="external-link">
+							<a href="mailto:emailtonency@gmail.com" target="_blank"><img src="images/mail.png" width="30"></a><a href="https://www.linkedin.com/in/nency-shobhashana/" target="_blank"><img src="images/linkedin.png" width="20"></a>
+							<a href="document/nencyResume.pdf" target="_blank" download><img src="images/pdf.png" width="20"></a>
+							<a href="https://github.com/nency-shobhashana" target="_blank"><img src="images/git.png" width="20"></a>
+							<a href="https://stackoverflow.com/users/8938953/" target="_blank"><img src="images/stackoverflow.png"></a></li>
+						</div>
+					</div>
+				</div>
+
 			</aside>
+
 			<div class="main-side">
 				<div class="personal-info">
 					<h2>About Me</h2>
@@ -187,16 +240,32 @@
 					</div>
 				</div>
 
-				<div class="work-info">
+				<div class="work-port">
 					<h2>Work Portfolio</h2>
 					<span>Here is a some images of my work.</span>
 					<div class="portfolio-detail">
-						<img src="images/">
-						<img src="images/">
-						<img src="images/">
+						<div class="slider-parent">	
+						<div class="slider">
+						  <div class="slides">
+						    <div id="slide-1"><img src="images/addwebsolution.png"></div>
+						    <div id="slide-2"><img src="images/agilecommerce.png"></div>
+						    <div id="slide-3"><img src="images/ahousebythesea.png"></div>
+						    <div id="slide-4"><img src="images/antwerp.png"></div>
+						    <div id="slide-5"><img src="images/appstrap.png"></div>
+						    <div id="slide-6"><img src="images/baxendale.png"></div>
+						    <div id="slide-7"><img src="images/chocoru.png"></div>
+						  </div>
+						  <a href="#slide-1">1</a>
+						  <a href="#slide-2">2</a>
+						  <a href="#slide-3">3</a>
+						  <a href="#slide-4">4</a>
+						  <a href="#slide-5">5</a>
+						  <a href="#slide-6">6</a>
+						  <a href="#slide-7">7</a>
+						</div>
+					</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</main>
