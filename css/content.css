@@ -45,6 +45,7 @@ a {
 }
 a:hover {
 	color: #c8553d;
+	text-decoration: underline;
 }
 
 /* header*/
@@ -65,6 +66,8 @@ header a.title {
 }
 header a.title h2 {
 	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 10px;
 }
 header h3 {
 	margin: 0;
@@ -96,6 +99,28 @@ nav > ul > li a:after {
 }
 nav > ul > li:last-child a:after {
 	content: none;
+}
+
+
+/* button design */
+button {
+	background-color: #B0694E;
+	border-color: #f2e9e2;
+	padding: 10px 15px;
+	border-radius: 0 12px;
+	font-size: 16px;
+}
+button a {
+	color: #FFF;
+}
+button:hover {
+	background-color: #f2e9e2;
+	border-color: #B0694E
+}
+button:hover a,
+button:hover a:hover {
+	color: #000;
+	text-decoration: none;
 }
 
 /* Side bar */
@@ -267,23 +292,30 @@ main {
 
 /* Blog Page */
 aside .popular-blog {
+	display: inline-block;
+	width: 100%;
+	min-height: 60px;
 	border-bottom: 1px solid #718355;
 	margin-bottom: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 aside .popular-blog:last-child {
 	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 aside .popular-blog .image {
 	float: left;
 	margin-right: 5px;
-	margin-bottom: 5px;
+}
+aside .popular-blog h4 {
+	margin: 0;
 }
 
 .blog-holder {
 	display: inline-block;
 	width: 100%;
-	/*text-align: center;*/
+	text-align: justify;
 }
 .blog-holder .blog-img .img-caption {
 	margin-top: 4px;
@@ -420,6 +452,7 @@ progress[value]::-webkit-progress-value {
 .blog-higlight-holder {
 	display: inline-block;
 	width: 100%;
+	padding-bottom: 25px;
 	margin-bottom: 25px;
 	border-bottom: 1px dotted #B0694E;
 }
